@@ -1,0 +1,11 @@
+yum update
+yum install openssh-server
+systemctl status sshd
+1) web server 설치
+ yum install httpd
+ systemctl status httpd 확인
+ systemctl start httpd  시작
+ 포트 열기 -> firewall-cmd --zone=public --add-port=80/tcp --permanent
+ 포트 적용 -> firewall-cmd --reload
+
+ C:\Windows\System32\drivers\etc
